@@ -1,0 +1,72 @@
+﻿@model JSL_Teste_0103.Models.Motorista
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Motorista</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoMarca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoMarca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoModelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoModelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoPlaca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoPlaca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoEixos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoEixos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.enderecoMotorista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enderecoMotorista)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

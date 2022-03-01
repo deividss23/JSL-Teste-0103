@@ -1,0 +1,66 @@
+﻿@model JSL_Teste_0103.Models.Motorista
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Motorista</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoMarca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoMarca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoModelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoModelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoPlaca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoPlaca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caminhaoEixos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caminhaoEixos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.enderecoMotorista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enderecoMotorista)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

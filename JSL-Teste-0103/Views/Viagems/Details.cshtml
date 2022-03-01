@@ -1,0 +1,50 @@
+﻿@model JSL_Teste_0103.Models.Viagem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Viagem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dataViagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataViagem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localSaida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localSaida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmViagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmViagem)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,56 @@
+﻿@model JSL_Teste_0103.Models.Viagem
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Viagem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dataViagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataViagem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localSaida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localSaida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmViagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmViagem)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
